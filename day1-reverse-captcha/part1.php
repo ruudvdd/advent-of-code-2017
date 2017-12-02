@@ -1,6 +1,6 @@
 <?php
 
-$input = $argv[1];
+$input = file_get_contents(__DIR__ . '/input');
 
 $numberOfChars = strlen($input);
 $previous = $input[$numberOfChars - 1];
