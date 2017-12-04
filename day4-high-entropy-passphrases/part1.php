@@ -11,10 +11,6 @@ function isValidPassphrase(string $passphrase) : bool {
 
     $uniqueWords = [];
 
-    if (!is_array($words)) {
-        var_dump($words);
-    }
-
     foreach ($words as $word) {
         if (isset($uniqueWords[$word])) {
             return false;
